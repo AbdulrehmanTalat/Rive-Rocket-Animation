@@ -1,91 +1,17 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-
-const inter = Inter({ subsets: ['latin'] })
-
+import RocketAniamtion from '@/components/rocketanimation';
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div className='flex flex-col items-center justify-center space-y-5 px-20 text-sm xmd:flex-row xmd:px-5 xmd:text-base md:px-20'>
+      <p className='min-w-[300px] p-5 text-justify text-gray-50 xmd:min-w-[200px] md:min-w-[350px]'>
+        Experience the captivating fusion of Rive and Next.js. See for yourself how Rive's versatile technology can bring design to life with fluid, lifelike movements and dynamic visuals.
+        Rive and Next.js have joined forces to create an unparalleled user experience, seamlessly blending captivating design with powerful functionality. With Rive's versatile technology, your designs can come to life with fluid, lifelike movements and dynamic visuals, allowing you to create immersive and engaging user interfaces that capture your audience's attention.
+        By integrating Rive with Next.js, you can take your web development to the next level. With Rive's intuitive design tools, you can create complex animations and interactions that would normally require extensive coding, and with Next.js, you can build powerful server-side rendered applications that deliver lightning-fast performance and seamless user experiences.
+        Whether you're building a simple website or a complex web application, Rive and Next.js make it easy to create stunning, interactive designs that elevate your brand and captivate your audience. So why wait? Experience the captivating fusion of Rive and Next.js for yourself and take your web development to new heights.
+      </p>
+      <div className='flex-grow'>
+        <RocketAniamtion></RocketAniamtion>
+        <br></br>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
